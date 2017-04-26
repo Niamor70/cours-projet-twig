@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ page_title }}
+{% endblock %}
+
+{% block body %}
+    {% if message_e is defined %}
+        <div id="message">
+            {{ message_e }}
+        </div>
+    {% endif %}
+    <div class="content">
+        <h1>{{ title_H1 }}</h1>
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+    <style>
+        body {
+            background-color: lightgray;
+        }
+        #message {
+            background-color: lightcoral;
+        }
+    </style>
+{% endblock %}
+
+{% block javascripts %}
+test2
+{% endblock %}

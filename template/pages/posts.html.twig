@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ page_title }}
+{% endblock %}
+
+{% block body %}
+    <div class="content">
+        <h1>{{ title_H1 }}</h1>
+    </div>
+    {% for post in posts %}
+        {{ post.id }}<br>
+    {% endfor %}
+{% endblock %}
+
+{% block stylesheets %}
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+{% endblock %}
+
+{% block javascripts %}
+    <script>
+
+    </script>
+{% endblock %}
